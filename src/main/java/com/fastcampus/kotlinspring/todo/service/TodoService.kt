@@ -33,8 +33,7 @@ class TodoService(
             title = request.title,
             description = request.description,
             done = request.done,
-            createdAt = LocalDateTime.now(),
-            updatedAt = LocalDateTime.now()
+            createdAt = LocalDateTime.now()
         )
 
         return todoRepository.save(todo)
